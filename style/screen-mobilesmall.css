@@ -179,7 +179,7 @@
     }
 
     .logo{
-        background-image: url(img/logos/logo1senacColorido.png);
+        background-image: url(../img/logos/logo1senacColorido.png);
         width:55px;
         height: 42px;
         background-repeat: no-repeat;
