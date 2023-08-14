@@ -2,7 +2,7 @@
 
     @font-face {
         font-family: 'padrao1';
-        src: url(source/Gotham\ Book.otf);
+        src: url(../source/Gotham\ Book.otf);
     }
     
     :root{
