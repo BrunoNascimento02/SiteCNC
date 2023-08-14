@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <main>
+        <img src="img/logos/logo1senacColorido.png" alt="" width="100">
+        <form action="htmls/index.html" method="post" class="formulario" autocomplete="off"><br>
+            <label for="idnome">Nome Completo</label>
+            <input type="text" name="Nome" id="idnome" placeholder="Digite seu nome Aqui"  class="nome valida">
+            <br><br>
+            <label for="idsobrenome">E-mail</label>
+            <input type="text" name="Sobrenome" id="idsobrenome" placeholder="Seu sobrenome" class="email valida">
+            <br><br>
+            <label for="idcpf">CPF</label>
+            <input type="text" name="CPF" id="idcpf" placeholder="Seu CPF" class="cpf valida">
+            <br><br>
+            <label for="ididade">Idade</label>
+            <input type="text" name="idade" id="ididade" placeholder="Sua Idade" class="idade valida">
+            <br><br>
+            <label for="idsenha">Senha</label>
+            <input type="password" name="Senha" id="idsenha" placeholder="Digite uma senha" class="senha valida">
+            <br><br>
+            <label for="idconfirmasenha">Confirma Senha</label>
+            <input type="password" name="confirmasenha" id="idconfirmasenha" placeholder="Confirma senha" class="confirmasenha valida"><br><br>
+            <button type="submit">Entrar no Site</button><br><br>
+            <div class="loading"></div>
+            <div class="confirmado"></div>
+        </form><br>
+        <script src="Validar CPF.js"></script>
+        <script src="index.js"></script>
+    </main>
+</body>
+
+</html>

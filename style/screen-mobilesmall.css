@@ -1,0 +1,233 @@
+@media screen and (min-width:400px) and (max-width:700px)  { /* Tela a partir de 1200px*/
+
+    @font-face {
+        font-family: 'padrao1';
+        src: url(source/Gotham\ Book.otf);
+    }
+    
+    :root{
+        --cor-azul-fraco:rgba(119, 169, 235, 0.938);
+        --cor-amarelo-padrao:rgb(223, 210, 32);
+    }
+    
+    
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 2s;
+    }
+
+    .menuclick{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        cursor: pointer;
+    }
+    
+    main{
+        margin-top: 50px;
+        transition: 1s;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .background-tittle{
+
+        background-color: rgb(255, 255, 255);
+    }
+    .background-tittle >menu{
+        position: absolute;
+        top: 120px;
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+    }
+    .imagem-background>img{
+        width: 100%;
+    }
+
+    .conteudo-tittle2{
+        display: none;
+    }
+    
+    .menu{
+        text-align: center;
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        line-height: 2;
+        background-color:var(--cor-azul-fraco);
+        border-radius: 20px 0px 0px 20px;
+    }
+    .menu>li{
+        display: block;
+        text-align: center;
+        width: 300px;
+    }
+    
+    .menu>li>a{
+        text-decoration: none;
+        font-size: large;
+        font-family: 'padrao1';
+        color: rgb(255, 255, 255);
+        margin: 10px;
+    }
+    
+    .menu>li>a:hover{
+        color: blue;
+        transition: .9s;
+        text-shadow: none;
+        padding: 5px;
+        background-color: rgb(218, 218, 221);
+        border-radius: 10px;
+    }
+    
+    .cliqueaqui{
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.158);
+        padding: 20px;
+        width: 34%;
+        border-radius: 40px;
+        background-color: var(--cor-azul-fraco);
+        margin: auto;
+        transition: 2s;
+    }
+    
+    .cliqueaqui:hover{
+        border-radius: 30px;transition: .5s;
+        background-color: var(--cor-amarelo-padrao);
+    }
+    
+    .cliqueaqui>a{
+        text-decoration: none;
+        font-family: 'padrao1';
+        font-size: large;
+        font-weight: bolder;
+        color: rgba(0, 0, 0, 0.658);
+    }
+    .cliqueaqui>a:hover{
+        color: rgb(255, 255, 255);
+        transition: .5s;
+    }
+    
+    .sessao1{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 3s;
+
+    }
+    .sessao1 > h1{
+        background-color:var(--cor-azul-fraco);
+        width: 160px;
+        height: 70px;
+        margin: auto;
+        font-size: 4em;
+        border-radius: 10px 50px;
+        font-family:'padrao1';
+    }
+
+    
+    .conteudo>p{
+        margin-top: 40px;
+        font-family:'padrao1';
+        font-size: 1em;
+        text-align: justify;
+    }
+    .conteudo>.euquadrado{
+        margin: auto;
+    }
+    
+    .conteudo>.euquadrado>img{
+        display: none;
+    }
+    
+    .cliqueaqui1{
+        text-align: center;
+        margin: auto;
+        border: 1px solid rgba(199, 168, 168, 0.158);
+        padding: 20px 0px;
+        border-radius: 60px;
+        background-color: var(--cor-azul-fraco);
+        transition: 2s;
+        width: 60%;
+    }
+    
+    .cliqueaqui1:hover{
+        border-radius: 30px;transition: .5s;
+        background-color: var(--cor-amarelo-padrao);
+    }
+    
+    .cliqueaqui1>a{
+        text-decoration: none;
+        font-family: 'padrao1';
+        font-size: large;
+        font-weight: bolder;
+        color: rgba(0, 0, 0, 0.658);
+    }
+    .cliqueaqui1>a:hover{
+        color: rgb(255, 255, 255);
+        transition: .5s;
+    }
+
+    .logo{
+        background-image: url(img/logos/logo1senacColorido.png);
+        width:55px;
+        height: 42px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 20%;
+        top: -60px;
+    }
+    
+    .convidados{
+        text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 3s;
+    }
+    
+    .convidados-list{
+        display: inline-block;
+        width: 222px;
+        height: 100px;
+    }
+    .convidados-list>img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    footer{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    footer>img{
+        width: 100%;
+    }
+    
+    footer>ul{
+        columns: 2;
+    
+    }
+    
+    footer>ul>li{
+        display: inline-block;
+        line-height: 1.8;
+    }
+    footer>ul>li>a{
+        text-decoration: none;
+        font-family: 'padrao1';
+        font-weight: bold;
+        font-size: .8em;
+    }
+}

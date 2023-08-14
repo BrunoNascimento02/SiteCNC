@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'padrao1';
+    src: url(source/Gotham-Medium.otf);
+}
+
+*{
+    font-family: 'padrao1';
+}
+
+body{
+    background-image: linear-gradient(to right top,rgb(0, 102, 255),rgb(255, 255, 255),yellow);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+    background-color: rgba(76, 64, 241, 0.733);
+    width: 700px;
+    text-align: center;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 300px 0px ;
+    box-shadow: 10px 10px 1px rgba(255, 255, 255, 0.13);
+}
+
+main > form {
+    line-height: 1;
+    font-size: large;
+    color: rgb(233, 236, 18);
+    width: 310px;
+    margin: auto;
+}
+
+main > form > input{
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    width: 270px;
+    height: 30px;
+}
+
+main > form > button{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    color: rgb(10, 113, 247);
+}
+
+main > form > button:hover{
+    background-color: rgb(29, 241, 21);
+    width: 125px;
+    height: 42px;
+    transition: .2s;
+}
+
+.loading{
+    display: none;
+    background-image: url(img/lg.ring-loading-gif.gif);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    margin: auto;
+}
+
+.confirmado{
+    display: none;
+    background-image: url(img/formulario-sucesso.png);
+    height: 90px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
